@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="format-detection" content="telephone=no">
+    <title>北京首旅慧联科技 - 加入我们</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Sans+Arabic:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="首旅慧科" class="logo-img">
+                <span class="logo-text">首旅慧科</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">关于我们</a></li>
+                <li><a href="#business" data-i18n="nav_business">业务板块</a></li>
+                <li><a href="#team" data-i18n="nav_team">我们的团队</a></li>
+                <li><a href="#join" data-i18n="nav_join">加入我们</a></li>
+            </ul>
+            
+            <!-- Language Selector -->
+            <div class="lang-selector">
+                <button class="lang-toggle" aria-label="Select language">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span class="current-lang">简体中文</span>
+                    <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <button class="lang-option active" data-lang="zh-CN">
+                        <span class="lang-flag">🇨🇳</span>
+                        <span>简体中文</span>
+                    </button>
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="es">
+                        <span class="lang-flag">🇪🇸</span>
+                        <span>Español</span>
+                    </button>
+                    <button class="lang-option" data-lang="pt">
+                        <span class="lang-flag">🇧🇷</span>
+                        <span>Português</span>
+                    </button>
+                    <button class="lang-option" data-lang="ar">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span>العربية</span>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line" data-i18n="hero_company">北京首旅慧联科技</span>
+                <span class="title-highlight" data-i18n="hero_slogan">寻找同路人，一起走夜路</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+                首旅集团创立并控股的科技型企业 · 国家高新技术企业 · 专精特新企业
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-i18n="hero_stat1_num">100+</span>
+                    <span class="stat-label" data-i18n="hero_stat1_label">在职员工</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-i18n="hero_stat2_num">30</span>
+                    <span class="stat-label" data-i18n="hero_stat2_label">平均年龄</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-i18n="hero_stat3_num">80%</span>
+                    <span class="stat-label" data-i18n="hero_stat3_label">来自互联网大厂</span>
+                </div>
+            </div>
+            <a href="#join" class="cta-button">
+                <span data-i18n="hero_cta">立即加入</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span data-i18n="hero_scroll">向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 视频展示 -->
+    <section id="video" class="section video-section">
+        <div class="video-section-bg"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag" data-i18n="video_tag">精彩视频</span>
+                <h2 class="section-title" data-i18n="video_title">感受我们的活力</h2>
+                <p class="section-desc" data-i18n="video_desc">通过视频了解首旅慧科的精彩日常</p>
+            </div>
+        </div>
+        <div class="cinema-video-wrapper">
+            <div class="cinema-frame">
+                <div class="cinema-screen">
+                    <video 
+                        class="showcase-video" 
+                        src="douyin.mp4" 
+                        playsinline
+                        webkit-playsinline
+                        x5-playsinline
+                        x5-video-player-type="h5"
+                        x5-video-player-fullscreen="true"
+                        loop
+                        muted
+                        preload="metadata"
+                        disablePictureInPicture
+                    ></video>
+                    <div class="video-overlay">
+                        <button class="play-btn" aria-label="播放视频">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <span class="play-text" data-i18n="video_play_hint">点击播放</span>
+                    </div>
+                    <!-- 视频控制条 -->
+                    <div class="video-bottom-controls">
+                        <div class="video-progress">
+                            <div class="progress-bar">
+                                <div class="progress-filled"></div>
+                            </div>
+                        </div>
+                        <div class="video-control-buttons">
+                            <button class="control-btn play-pause-btn" aria-label="播放/暂停">
+                                <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                                </svg>
+                            </button>
+                            <div class="video-time">
+                                <span class="time-current">0:00</span>
+                                <span class="time-separator">/</span>
+                                <span class="time-duration">0:00</span>
+                            </div>
+                            <div class="control-spacer"></div>
+                            <button class="control-btn mute-btn" aria-label="静音/取消静音">
+                                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+                                    <line x1="23" y1="9" x2="17" y2="15"/>
+                                    <line x1="17" y1="9" x2="23" y2="15"/>
+                                </svg>
+                                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                                    <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                                </svg>
+                            </button>
+                            <button class="control-btn fullscreen-btn" aria-label="全屏">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 电影感装饰 -->
+                <div class="cinema-reflection"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="video-caption">
+                <p data-i18n="video_info_desc">
+                    作为抖音平台全国最大的文旅服务商，我们用创意和热情记录每一个精彩时刻。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about_tag">01</span>
+                <h2 class="section-title" data-i18n="about_title">我们是谁</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="about-lead" data-i18n="about_lead" data-i18n-html>
+                        北京首旅慧联科技有限责任公司，由<strong>首旅集团</strong>创立并控股的科技型企业，
+                        已获得多轮融资，是具有国企属性的互联网平台型企业。
+                    </p>
+                    <p class="about-text" data-i18n="about_text" data-i18n-html>
+                        公司成立于2019年，目前主要有<span class="highlight">生鲜电商</span>、
+                        <span class="highlight">本地生活</span>、<span class="highlight">数字化与AI创新</span>、
+                        <span class="highlight">MCN基地</span>四大业务板块。
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about_card1_title">股权结构</h3>
+                        <ul>
+                            <li data-i18n="about_card1_item1" data-i18n-html>首旅集团占股 <strong>63%</strong></li>
+                            <li data-i18n="about_card1_item2" data-i18n-html>京东集团占股 <strong>30%</strong></li>
+                            <li data-i18n="about_card1_item3" data-i18n-html>员工持股平台占股 <strong>7%</strong></li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about_card2_title">资质荣誉</h3>
+                        <ul>
+                            <li data-i18n="about_card2_item1">国家高新技术企业</li>
+                            <li data-i18n="about_card2_item2">专精特新资质企业</li>
+                            <li data-i18n="about_card2_item3">网络文化经营许可证</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M23 21V19C23 17.1362 21.7252 15.5701 20 15.126" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 3.12598C17.7252 3.56984 19 5.13616 19 6.99998C19 8.8638 17.7252 10.4301 16 10.874" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about_card3_title">合作伙伴</h3>
+                        <ul>
+                            <li data-i18n="about_card3_item1">抖音平台全国最大文旅服务商</li>
+                            <li data-i18n="about_card3_item2">北京市国资系统首批抖音合作</li>
+                            <li data-i18n="about_card3_item3">深入混改标杆企业</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btg-intro">
+                <div class="btg-content">
+                    <h3 data-i18n="btg_title">背靠首旅集团，基础资源盘面丰富</h3>
+                    <p data-i18n="btg_desc">
+                        首旅集团是中国最大的文旅服务集团之一，北京市属国企和北京市首家国有资本投资公司试点企业
+                    </p>
+                </div>
+                <div class="btg-stats">
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat1_num">3</span>
+                        <span class="btg-label" data-i18n="btg_stat1_label">上市公司</span>
+                    </div>
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat2_num">160</span>
+                        <span class="btg-label" data-i18n="btg_stat2_label">知名品牌</span>
+                    </div>
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat3_num">1000亿+</span>
+                        <span class="btg-label" data-i18n="btg_stat3_label">资产规模</span>
+                    </div>
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat4_num">7000+</span>
+                        <span class="btg-label" data-i18n="btg_stat4_label">实体门店</span>
+                    </div>
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat5_num">400+</span>
+                        <span class="btg-label" data-i18n="btg_stat5_label">覆盖城市</span>
+                    </div>
+                    <div class="btg-stat">
+                        <span class="btg-number" data-i18n="btg_stat6_num">3亿</span>
+                        <span class="btg-label" data-i18n="btg_stat6_label">年客流量</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 业务板块 -->
+    <section id="business" class="section business-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="business_tag">02</span>
+                <h2 class="section-title" data-i18n="business_title">我们的业务</h2>
+                <p class="section-desc" data-i18n="business_desc">做最懂行业的数字化服务商</p>
+            </div>
+            <div class="business-vision">
+                <div class="vision-item">
+                    <span class="vision-label" data-i18n="business_vision1_label">长期投入</span>
+                    <span class="vision-text" data-i18n="business_vision1_text">深耕消费领域，致力文旅融合，立足产研一体</span>
+                </div>
+                <div class="vision-item">
+                    <span class="vision-label" data-i18n="business_vision2_label">核心要素</span>
+                    <span class="vision-text" data-i18n="business_vision2_text">流量运营 · 供应链改造 · AI与数据驱动</span>
+                </div>
+            </div>
+            <div class="business-grid">
+                <div class="business-card" data-index="01">
+                    <div class="business-card-header">
+                        <div class="business-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.70711 15.2929C4.07714 15.9229 4.52331 17 5.41421 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="business_card1_title">电商事业部</h3>
+                    </div>
+                    <div class="business-card-body">
+                        <p class="business-goal" data-i18n="business_card1_goal">以"全球食材良品"为目标，打造数字化供应链和全渠道运营能力</p>
+                        <ul class="business-features">
+                            <li data-i18n="business_card1_feature1">以东来顺、月盛斋、顺鑫等老字号为切入</li>
+                            <li data-i18n="business_card1_feature2">拓展合作品牌品类，拥有臻选客等自有品牌</li>
+                            <li data-i18n="business_card1_feature3">主打原产地模式，扩充海外供应链</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="business-card" data-index="02">
+                    <div class="business-card-header">
+                        <div class="business-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.4851 12.0005 21.4851C11.4704 21.4851 10.962 21.2746 10.587 20.9L6.343 16.657C5.22422 15.5382 4.46234 14.1127 4.15369 12.5609C3.84504 11.009 4.00349 9.40051 4.60901 7.93871C5.21452 6.47691 6.2399 5.22754 7.55548 4.34853C8.87107 3.46952 10.4178 3.00031 12 3.00031C13.5822 3.00031 15.1289 3.46952 16.4445 4.34853C17.7601 5.22754 18.7855 6.47691 19.391 7.93871C19.9965 9.40051 20.155 11.009 19.8463 12.5609C19.5377 14.1127 18.7758 15.5382 17.657 16.657Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="business_card2_title">本地生活事业部</h3>
+                    </div>
+                    <div class="business-card-body">
+                        <p class="business-goal" data-i18n="business_card2_goal">以酒旅业态为核心，打造城市消费新热潮</p>
+                        <ul class="business-features">
+                            <li data-i18n="business_card2_feature1">北京环球影城、万达酒店、凯宾斯基等头部品牌</li>
+                            <li data-i18n="business_card2_feature2">赛特奥莱、京津冀各区域政府景区资源</li>
+                            <li data-i18n="business_card2_feature3">以抖音为主，拓展小红书、视频号、快手等平台</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="business-card" data-index="03">
+                    <div class="business-card-header">
+                        <div class="business-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M9.663 17H14.337M12 3V4M18.364 5.636L17.657 6.343M21 12H20M4 12H3M6.343 6.343L5.636 5.636M17.657 17.657L18.364 18.364M6.343 17.657L5.636 18.364" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="business_card3_title">新技术与创新事业部</h3>
+                    </div>
+                    <div class="business-card-body">
+                        <p class="business-goal" data-i18n="business_card3_goal">自研"资源+内容"供应链双核心技术体系</p>
+                        <ul class="business-features">
+                            <li data-i18n="business_card3_feature1">文旅垂直领域大语言模型"盘道"</li>
+                            <li data-i18n="business_card3_feature2">丰富的AI落地应用场景</li>
+                            <li data-i18n="business_card3_feature3">强大的外部技术合作方，项目制模式快速验证</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="business-card" data-index="04">
+                    <div class="business-card-header">
+                        <div class="business-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M15 10L19.5528 7.72361C20.2177 7.39116 21 7.87465 21 8.61803V15.382C21 16.1253 20.2177 16.6088 19.5528 16.2764L15 14M5 18H13C14.1046 18 15 17.1046 15 16V8C15 6.89543 14.1046 6 13 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="business_card4_title">MCN中心</h3>
+                    </div>
+                    <div class="business-card-body">
+                        <p class="business-goal" data-i18n="business_card4_goal">依托强大供应链，为品牌方做全域运营</p>
+                        <ul class="business-features">
+                            <li data-i18n="business_card4_feature1">打造本地吃喝玩乐游购娱专业账号矩阵</li>
+                            <li data-i18n="business_card4_feature2">建设自有IP，内容创新驱动</li>
+                            <li data-i18n="business_card4_feature3">线上线下融合的商超模式，ICELAND品牌中国首店</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-highlight">
+                <div class="ai-content">
+                    <span class="ai-badge" data-i18n="ai_badge">AI + 景区</span>
+                    <h3 data-i18n="ai_title">首旅慧科投身"景区+AI"赛道是必由之路</h3>
+                    <p data-i18n="ai_desc">二年内实现全面无人化经营，未来可输出给传统商业的样板</p>
+                    <div class="ai-tags">
+                        <span data-i18n="ai_tag1">无人直播</span>
+                        <span data-i18n="ai_tag2">无人售货</span>
+                        <span data-i18n="ai_tag3">无人运营</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队 -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="team_tag">03</span>
+                <h2 class="section-title" data-i18n="team_title">我们的团队</h2>
+            </div>
+            <div class="team-intro">
+                <p data-i18n="team_intro" data-i18n-html>
+                    我们具有<strong>开放的企业文化</strong>，<strong>市场化的薪酬与激励体系</strong>，
+                    <strong>充分的个人发展机制和空间</strong>，希望寻找踏实专业、坚韧务实，拥有创业精神的伙伴加入，与公司一起成长！
+                </p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🔥</div>
+                    <h3 data-i18n="value1_title">自驱力强</h3>
+                    <p data-i18n="value1_desc">有责任心，有担当，勇于打破舒适区，把实现自我价值和实现组织目标相结合</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 data-i18n="value2_title">追求极致</h3>
+                    <p data-i18n="value2_desc">不断探索新的赛道与目标，不断提高对自己的要求，做到持续成长</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3 data-i18n="value3_title">敢为人先</h3>
+                    <p data-i18n="value3_desc">尝试多种可能，不断迭代，主动更新自己的认知边界</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💪</div>
+                    <h3 data-i18n="value4_title">坚韧务实</h3>
+                    <p data-i18n="value4_desc">挫折与坎坷是经验与财富，坚定初心的同时不断总结反思，实现突破和蜕变</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3 data-i18n="value5_title">简单纯粹</h3>
+                    <p data-i18n="value5_desc">不搞小团体与亚文化，心怀真诚，做事坦荡，营造温暖的团队氛围</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 data-i18n="value6_title">开放包容</h3>
+                    <p data-i18n="value6_desc">格局打开，海纳百川，信任伙伴，乐于合作，谦虚谨慎</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们 -->
+    <section id="join" class="section join-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag" data-i18n="join_tag">04</span>
+                <h2 class="section-title" data-i18n="join_title">加入我们</h2>
+                <p class="section-desc" data-i18n="join_desc">与慧科一起成长</p>
+            </div>
+            <div class="join-grid">
+                <div class="join-card benefits">
+                    <div class="join-card-header">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3 data-i18n="benefits_title">福利待遇</h3>
+                    </div>
+                    <ul class="join-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="benefit1">标准五险一金、补充医疗保险</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="benefit2">年终奖金、提成激励</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="benefit3">免费三餐</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="benefit4">年度体检</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="benefit5">生日会、员工活动</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join-card development">
+                    <div class="join-card-header">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M13 7L11.8845 4.76892C11.5634 4.1268 10.9344 3.68382 10.2185 3.61386L7 3.29999M7 3.29999L4 7M7 3.29999V3M13 17L11.8845 19.2311C11.5634 19.8732 10.9344 20.3162 10.2185 20.3861L7 20.7M7 20.7L4 17M7 20.7V21M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 data-i18n="development_title">个人发展</h3>
+                    </div>
+                    <ul class="join-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="development1">专业、管理双通道职业路径</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="development2">内外部培训、员工成长体系</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="development3">轮岗机制、充分的发展空间</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="development4">骨干员工择优入伙持股</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span data-i18n="development5">工作居住证、北京落户指标</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="location-card">
+                <div class="location-content">
+                    <h3 data-i18n="location_title">办公地点</h3>
+                    <p class="address" data-i18n="location_address">北京市朝阳区雅宝路10号11层</p>
+                    <ul class="location-features">
+                        <li data-i18n="location_feature1">坐落于北京市东二环建国门核心商圈</li>
+                        <li data-i18n="location_feature2">毗邻地铁1号线/2号线/6号线-建国门站/朝阳门站</li>
+                        <li data-i18n="location_feature3">公共交通便利，公司内各项设施齐全</li>
+                    </ul>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.4851 12.0005 21.4851C11.4704 21.4851 10.962 21.2746 10.587 20.9L6.343 16.657C5.22422 15.5382 4.46234 14.1127 4.15369 12.5609C3.84504 11.009 4.00349 9.40051 4.60901 7.93871C5.21452 6.47691 6.2399 5.22754 7.55548 4.34853C8.87107 3.46952 10.4178 3.00031 12 3.00031C13.5822 3.00031 15.1289 3.46952 16.4445 4.34853C17.7601 5.22754 18.7855 6.47691 19.391 7.93871C19.9965 9.40051 20.155 11.009 19.8463 12.5609C19.5377 14.1127 18.7758 15.5382 17.657 16.657Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span data-i18n="location_map">建国门核心商圈</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 data-i18n="cta_title">我们不care工作年限</h3>
+                    <p data-i18n="cta_desc">只需要"你"拥有简单纯粹、踏实专业、坚韧务实的品质</p>
+                    <p class="cta-highlight" data-i18n="cta_highlight">期待你的加入！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="logo.png" alt="首旅慧科" class="logo-img">
+                        <span class="logo-text">首旅慧科</span>
+                    </a>
+                    <p data-i18n="footer_company">北京首旅慧联科技有限责任公司</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav_about">关于我们</a>
+                    <a href="#business" data-i18n="nav_business">业务板块</a>
+                    <a href="#team" data-i18n="nav_team">我们的团队</a>
+                    <a href="#join" data-i18n="nav_join">加入我们</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">© 2024 北京首旅慧联科技有限责任公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Chatxstar 在线客服 -->
+    <script src="https://cloud.chatxstar.com/global-agent/test/5e2e1db8af8df2dc7378852f50700a8e20c8628b.js"></script>
+    <script>
+        ChatAgentSDK.init({
+            id: 'b564c2ce815946b59065f023fba49bff'
+        })
+    </script>
+</body>
+</html>
